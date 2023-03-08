@@ -20,19 +20,8 @@ while True:
     events,values = window.read()
     if events == sg.WIN_CLOSED:
         break
-    elif events == 'Cadastrar':
-        sg.theme('DarkBlack')
-
-        layout = [
-    [sg.Text('Digite seu nome')],
-    [sg.Input(key='nome')],
-    [sg.Text('Digite sua idade')],
-    [sg.Input(key='idade')],
-    [sg.Button(button_text='Cadastrar')],
-    ]
-        
-        
-        # r = values
-        # #print(f'Voce cadastrou '+ values[] +' com a idade '+ values[] '.')
-        # print(f"Voce cadastrou {r['nome']} com a idade {r['idade']}.")
-        # break
+    elif events == 'Cadastrar': 
+        r = values
+         #print(f'Voce cadastrou '+ values[] +' com a idade '+ values[] '.')
+        print(f"Voce cadastrou {r['nome']} com a idade {r['idade']}.")
+        break
